@@ -1,2 +1,2 @@
 # odin-calculator
-Project: Calculator for The Odin Project
+Project: Calculator from The Odin Project
