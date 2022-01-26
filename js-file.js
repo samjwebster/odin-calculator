@@ -19,7 +19,9 @@ const displayText = document.getElementById('display-text');
 
 // update function for later readability
 function updateDisplay() {
-    displayText.textContent = displayValue;
+    if(displayValue.length > 13) {
+        displayText.textContent = 'overflow';
+    } else displayText.textContent = displayValue;
 }
 
 // add button pressing to numbers
@@ -158,5 +160,9 @@ function operate(ops, vars) {
             variables[0] = result;
         }
     }
+
+    // rounds result to the nearest hundredth
+    result = Math.round(result * 100) / 100;
+
     return result;
 }

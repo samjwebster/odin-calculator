@@ -1,22 +1,11 @@
 body {
-    background-color: #233142;
+    background: linear-gradient(#28384c, #121a23);
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-}
-
-.dev {
-    background-color: #e3e3e3;
-    border:solid black 2px;
-    width: 50vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    color: #131a23;
-    text-align: center;
+    justify-content: top;
+    overflow: hidden;
 }
 
 #test1 {
@@ -39,6 +28,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    filter: drop-shadow(0.1vh 0.2vh 0.2vh rgb(0,0,0,0.3));
 }
 
 #name {
@@ -64,10 +54,11 @@ body {
     z-index: 1;
     width: 9vh;
     height: 9vh;
-    filter: invert(53%) sepia(17%) saturate(4374%) hue-rotate(323deg) brightness(94%) contrast(108%);
+    filter: invert(53%) sepia(17%) saturate(4374%) hue-rotate(323deg) brightness(94%) contrast(108%) drop-shadow(0.1vh 0.2vh 0.2vh rgb(0,0,0,0.6));
     align-self: center;
     justify-self: center;
     cursor: pointer;
+
 }
 
 #gh_bg {
@@ -80,6 +71,8 @@ body {
     background-color: #455d7a;
     align-self: center;
     justify-self: center;
+
+    filter: drop-shadow(0.3vh 1vh 0.2vh rgb(0,0,0,0.6));
 }
 
 #calc-body {
@@ -95,6 +88,8 @@ body {
     padding-right: 2vh;
     border: outset rgb(29, 40, 54) 1vh;
     border-radius: 2vh;
+
+    filter: drop-shadow(0.6vh 1.5vh 0.5vh rgb(0,0,0,0.7));
 }
 
 #calc-display {
@@ -107,6 +102,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    filter: drop-shadow(0.3vh 1vh 0.2vh rgb(0,0,0,0.5));
 }
 
 #display-text {
@@ -118,7 +115,6 @@ body {
 
 #buttons-main{
     display: grid;
-    
 }
 
 .text {
@@ -133,6 +129,8 @@ body {
     height: 10vh;
     border-radius: 2vh;
     color: #131a23;
+
+    filter: drop-shadow(0.3vh 1vh 0.2vh rgb(0,0,0,0.6));
 }
 
 .number {
@@ -142,6 +140,8 @@ body {
     height: 10vh;
     color: #e3e3e3;
     border-radius: 2vh;
+
+    filter: drop-shadow(0.3vh 1vh 0.2vh rgb(0,0,0,0.6));
 }
 
 /* POSITIONS OF BUTTONS*/
