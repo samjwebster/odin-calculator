@@ -6,6 +6,26 @@ body {
     justify-content: center;
 }
 
+.dev {
+    background-color: #e3e3e3;
+    border:solid black 2px;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    color: #131a23;
+    text-align: center;
+}
+
+#test1 {
+    font-size: 3vh;
+}
+#test2 {
+    font-size: 3vh;
+}
+
 #header {
     display: flex;
     flex-direction: row;
@@ -107,11 +127,12 @@ body {
 }
 
 .operator {
-    background-color: #f95959;
     border-color: #f95959;
+    background-color: #f95959;
     width: 10vh;
     height: 10vh;
     border-radius: 2vh;
+    color: #131a23;
 }
 
 .number {
@@ -123,12 +144,28 @@ body {
     border-radius: 2vh;
 }
 
-/* POSITIONS OF BUTTOnS*/
+/* POSITIONS OF BUTTONS*/
 #clear {
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     width: auto;
+}
+
+#backspace-icon {
+    width: 6vh;
+    height: 6vh;
+    filter: invert(7%) sepia(36%) saturate(713%) hue-rotate(174deg) brightness(93%) contrast(93%);
+}
+
+#backspace-button {
+    grid-row: 1;
+    grid-column: 3;
+    background-image: url('/backspace_icon.svg') no-repeat top left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 #divide {
     grid-row: 1;
